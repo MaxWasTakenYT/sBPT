@@ -12,12 +12,12 @@ usage() {
     echo -e "usage: $0 \n[--test | -t > Description for the argument]\n [--help | -h > e.g. Outputs usage and exits.]\n"
 }
 
-if [[ "$#" -eq 0]]; then
+if [[ "$#" -eq 0 ]]; then
     # If no argument was given, this will run
     echo -e "no arguments were given"
 fi
 
-while [[ "$#" -gt 0]]; do
+while [[ "$#" -gt 0 ]]; do
     case "$1" in
         --test|-t) # If the `--test` or `-t` argument gets parsed, this will run
             echo -e "test parsed"
